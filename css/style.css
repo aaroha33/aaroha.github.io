@@ -116,7 +116,7 @@ figure {
   width: 300px;
   position: fixed;
   z-index: 1001;
-    background-color: #f9bf3f;
+    background-color: #69B3FF;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
@@ -615,6 +615,7 @@ font-family: "Montserrat", Georgia, serif;}
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   -ms-box-shadow: none !important;
+  -o-box-shadow: none !important;
   -o-box-shadow: none !important;
   box-shadow: none !important;
   border: none; }
