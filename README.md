@@ -17,7 +17,7 @@ Web Portfolio to showcase projects and skills in better manner.
 * Skills with progress bar
 ### Education
 * Graduated
-* COmpleted Masters Course in AI
+* Completed Masters Course in AI
 ### Work Experience
 ### Contact
 * buddhadeb33@gmail.com
