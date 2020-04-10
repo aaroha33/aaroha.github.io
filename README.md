@@ -12,13 +12,15 @@ Web Portfolio to showcase projects and skills in better manner.
 * Machine learning
 * Ericsson
 
-### Hire Me banner
+### Hire Me for ML, Data Science and Analytics Role.
+Contact No : 7501385296
 ### Skills
 * Skills with progress bar
 ### Education
 * Graduated
 * Completed Masters Course in AI
 ### Work Experience
+2.5 + Experience in Ericsson
 ### Contact
 * buddhadeb33@gmail.com
 * Kolkata - Noida - Bangalore
