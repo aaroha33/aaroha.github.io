@@ -532,9 +532,29 @@ margin-left: 10px;}
   font-weight: 500; }
 
 .about-desc h1 {
-  font-size: 38px;
+  font-size: 48px;
   font-weight: 400;
-font-family: "Montserrat", Georgia, serif;}
+font-family: 'Flamenco', cursive;
+/*font-family: "Montserrat", Georgia, serif;*/
+}
+
+.about-desc1 h1 {
+  font-size: 48px;
+  font-weight: 400;
+font-family: "Montserrat", Georgia, serif;
+}
+
+.colorchange{
+	animation: cchange 1s infinte;
+}
+
+ /*@keyframes cchange{
+	0%{color:red;}
+	25%{color:blue;}
+	50%{color: yellow;}
+	100%{color: purple;}*/
+
+
 
 .hire {
   padding: 2em;
