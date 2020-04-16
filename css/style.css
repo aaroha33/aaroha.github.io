@@ -539,22 +539,26 @@ font-family: 'Flamenco', cursive;
 }
 
 .about-desc1 h1 {
-  font-size: 48px;
-  font-weight: 400;
-font-family: "Montserrat", Georgia, serif;
+  text-transform:uppercase;
+  font-family: "Montserrat", Georgia, serif;
+  font-size: 42px;
+  font-weight: 600;
+  color: #000066;
+  text-shadow: 2px 2px 5px red;
 }
 
-.colorchange{
-	animation: cchange 1s infinte;
+.effect{
+	 animation: animate 1s infinite;
+
 }
-
- /*@keyframes cchange{
-	0%{color:red;}
-	25%{color:blue;}
-	50%{color: yellow;}
-	100%{color: purple;}*/
-
-
+@keyframes animate
+{     0%   {color: #FF0000;}
+      25%  {color: #003300;}
+	  50%  {color: #3b2300;}
+	  75%  {color: #CC66FF;}
+      100% {color: #0000FF;}
+	
+}
 
 .hire {
   padding: 2em;
