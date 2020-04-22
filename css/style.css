@@ -132,7 +132,7 @@ figure {
   width: 300px;
   position: fixed;
   z-index: 1001;
-  background-color: #d78b14;
+  background-color: #8a496b;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
@@ -562,7 +562,7 @@ font-family: 'Flamenco', cursive;
 
 .hire {
   padding: 2em;
-  background: #3ff5f9; }
+  background: #e6de00;}
   .hire h3 {
     line-height: 1; }
   .hire .btn-hire {
@@ -575,8 +575,27 @@ font-family: 'Flamenco', cursive;
 .fancy-collapse-panel .panel-default > .panel-heading {
   padding: 0; }
 
+li:not(:last-child) {
+    margin-bottom: 15px;
+}
+html, body {margin:0; padding: 0; width: 100%;}
 
 
+.scrolling{
+	color: #FFFFFF;
+	font: normal 18px arial, sans-serif; 
+	background-color: #0066FF;
+	border: #000000 1px solid;
+	width: 95%; margin: 0 auto; 
+	padding: 4px 5px 3px 5px;
+	
+	-moz-border-radius: 17px; 
+	-webkit-border-radius: 17px; 
+	border-radius: 17px; 
+	-moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.20); 
+	-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.20); 
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.20);
+}
 <!-----projectcss------------>
 #projects {
   padding: 50px 15px;
