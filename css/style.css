@@ -7,7 +7,7 @@
 
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -19,7 +19,7 @@ body {
   color: rgba(0, 0, 0, 0.7); }
   @media screen and (max-width: 992px) {
     body {
-      font-size: 16px; } 
+      font-size: 16px; }
       h2{
           text-align: center;
       }
@@ -49,7 +49,7 @@ border-radius: 12px;
 -webkit-box-shadow: 4px 4px 14px #000;
 box-shadow: 4px 4px 14px #000;
 
-} 
+}
 
 
 a {
@@ -278,9 +278,9 @@ figure {
 #rcorners2 {
     border-radius: 15px;
   background: black;
-  padding: 20px; 
+  padding: 20px;
   width: 50%;
-  height: 40px; 
+  height: 40px;
 }
         #colorlib-aside .colorlib-footer ul li a {
           color: rgba(255, 255, 255, 0.3);
@@ -483,7 +483,7 @@ body.offcanvas {
     padding-bottom: 3em;
     padding-top: 2em;
     padding-right: 2em;
-    
+
 }
 #colorlib-footer2 .h2{
     color: red;
@@ -547,6 +547,15 @@ font-family: 'Flamenco', cursive;
   text-shadow: 2px 2px 5px red;
 }
 
+.about-desc2 h1 {
+  text-transform:uppercase;
+  font-family: 'Girassol';
+  font-size: 42px;
+  font-weight: 400;
+  color: #000066;
+  text-shadow: 2px 3px 5px grey;
+}
+
 .effect{
 	 animation: animate 1s infinite;
 
@@ -557,7 +566,7 @@ font-family: 'Flamenco', cursive;
 	  50%  {color: #3b2300;}
 	  75%  {color: #CC66FF;}
       100% {color: #0000FF;}
-	
+
 }
 
 .hire {
@@ -583,17 +592,17 @@ html, body {margin:0; padding: 0; width: 100%;}
 
 .scrolling{
 	color: #FFFFFF;
-	font: normal 18px arial, sans-serif; 
+	font: normal 18px arial, sans-serif;
 	background-color: #0066FF;
 	border: #000000 1px solid;
-	width: 95%; margin: 0 auto; 
+	width: 95%; margin: 0 auto;
 	padding: 4px 5px 3px 5px;
-	
-	-moz-border-radius: 17px; 
-	-webkit-border-radius: 17px; 
-	border-radius: 17px; 
-	-moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.20); 
-	-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.20); 
+
+	-moz-border-radius: 17px;
+	-webkit-border-radius: 17px;
+	border-radius: 17px;
+	-moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.20);
+	-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.20);
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.20);
 }
 <!-----projectcss------------>
@@ -1688,7 +1697,7 @@ align-items: stretch;}
   .ai-page li i {
     margin-right: 10px;
   }
-@media screen and (max-width: 1200px) { 
+@media screen and (max-width: 1200px) {
   .ai-p {
     line-height: 20px;
     font-size: 14px;
