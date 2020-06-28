@@ -1,5 +1,5 @@
 ;(function () {
-	
+
 	'use strict';
 
 
@@ -49,9 +49,9 @@
 	var counterWayPoint = function() {
 		if ($('#colorlib-counter').length > 0 ) {
 			$('#colorlib-counter').waypoint( function( direction ) {
-										
+
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-					setTimeout( counter , 400);					
+					setTimeout( counter , 400);
 					$(this.element).addClass('animated');
 				}
 			} , { offset: '90%' } );
@@ -64,7 +64,7 @@
 		$('.animate-box').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-				
+
 				i++;
 
 				$(this.element).addClass('item-animate');
@@ -87,9 +87,9 @@
 							el.removeClass('item-animate');
 						},  k * 200, 'easeInOutExpo' );
 					});
-					
+
 				}, 100);
-				
+
 			}
 
 		} , { offset: '85%' } );
@@ -104,10 +104,10 @@
 
 			if ($('body').hasClass('offcanvas')) {
 				$this.removeClass('active');
-				$('body').removeClass('offcanvas');	
+				$('body').removeClass('offcanvas');
 			} else {
 				$this.addClass('active');
-				$('body').addClass('offcanvas');	
+				$('body').addClass('offcanvas');
 			}
 		});
 
@@ -126,9 +126,9 @@
 
     			$('body').removeClass('offcanvas');
     			$('.js-colorlib-nav-toggle').removeClass('active');
-			
+
 	    	}
-	    	
+
 	    }
 		});
 
@@ -137,7 +137,7 @@
 
     			$('body').removeClass('offcanvas');
     			$('.js-colorlib-nav-toggle').removeClass('active');
-			
+
 	    	}
 		});
 
@@ -182,9 +182,9 @@
 	var navigationSection = function() {
 
 		var $section = $('section[data-section]');
-		
+
 		$section.waypoint(function(direction) {
-		  	
+
 		  	if (direction === 'down') {
 		    	navActive($(this.element).data('section'));
 		  	}
@@ -208,7 +208,7 @@
 
 
 	var sliderMain = function() {
-		
+
 	  	$('#colorlib-hero .flexslider').flexslider({
 			animation: "fade",
 			slideshowSpeed: 5000,
@@ -256,9 +256,9 @@
 
 				$("#sticky_item").stick_in_parent();
 			}
-			
 
-			
+
+
 
 		});
 
@@ -286,6 +286,56 @@
 	};
 
 
+
+	Highcharts.chart('container', {
+	  chart: {
+	    type: 'pie',
+	    options3d: {
+	      enabled: true,
+	      alpha: 35,
+	      beta: 0
+	    }
+	  },
+	  title: {
+	    text: 'Percentage of time spent engaged in activity in typical 24 hours'
+	  },
+	  accessibility: {
+	    point: {
+	      valueSuffix: '%'
+	    }
+	  },
+	  tooltip: {
+	    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+	  },
+	  plotOptions: {
+	    pie: {
+	      allowPointSelect: true,
+	      cursor: 'pointer',
+	      depth: 35,
+	      dataLabels: {
+	        enabled: true,
+	        format: '{point.name}'
+	      }
+	    }
+	  },
+	  series: [{
+	    type: 'pie',
+	    name: 'Divided with Percentage',
+	    data: [
+	      ['Work', 39.5],
+	      ['Sleep', 27.08],
+	      {
+	        name: 'Family & Food',
+	        y: 12.8,
+	        sliced: true,
+	        selected: true
+	      },
+	      ['Study | Youtube Work | Music & Guitar ', 12.5],
+	      ['Yoga & Mindfulness', 6.2],
+	      ['Others', 0.7]
+	    ]
+	  }]
+	});
 
 	// Document on load.
 	$(function(){
