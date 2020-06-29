@@ -287,55 +287,6 @@
 
 
 
-	Highcharts.chart('container', {
-	  chart: {
-	    type: 'pie',
-	    options3d: {
-	      enabled: true,
-	      alpha: 35,
-	      beta: 0
-	    }
-	  },
-	  title: {
-	    text: 'Percentage of time spent engaged in activity in typical 24 hours'
-	  },
-	  accessibility: {
-	    point: {
-	      valueSuffix: '%'
-	    }
-	  },
-	  tooltip: {
-	    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-	  },
-	  plotOptions: {
-	    pie: {
-	      allowPointSelect: true,
-	      cursor: 'pointer',
-	      depth: 35,
-	      dataLabels: {
-	        enabled: true,
-	        format: '{point.name}'
-	      }
-	    }
-	  },
-	  series: [{
-	    type: 'pie',
-	    name: 'Divided with Percentage',
-	    data: [
-	      ['Work', 39.5],
-	      ['Sleep', 27.08],
-	      {
-	        name: 'Family & Food',
-	        y: 12.8,
-	        sliced: true,
-	        selected: true
-	      },
-	      ['Study | Youtube Work | Music & Guitar ', 12.5],
-	      ['Yoga & Mindfulness', 6.2],
-	      ['Others', 0.7]
-	    ]
-	  }]
-	});
 
 	// Document on load.
 	$(function(){
