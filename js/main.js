@@ -287,6 +287,10 @@
 
 
 
+$(window).resize(function(){
+	        piechart_3d();
+	        });
+
 
 	// Document on load.
 	$(function(){

@@ -80,7 +80,7 @@
                               <div class="col-md-12">
                                  <div class="about-desc1">
                                     <h1><span class="effect">Buddhadeb Mondal</span></h1>
-                                  
+
                                     <div class="typewriter">
 
                                             <p>Artificial Intelligence Engineer | Ericsson | Network Engineering | Content Creator</p>
@@ -239,7 +239,7 @@
                               <div class="progress">
                                  <div class="progress-bar color-6" role="progressbar" aria-valuenow="50"
                                     aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                                    <span>40%</span>
+                                    <span>61%</span>
                                  </div>
                               </div>
                            </div>
@@ -356,8 +356,44 @@
                             <div class="about-desc">
                            <h1>My Daily Life Style <span style="color: #2538dd">Pie Chart</span></h1>
                            <hr>
-                            </div>
-							<p><strong>SITE DEVELOPMENT IN PROGESS &#128517 <p>
+
+
+                    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+                    <script type="text/javascript">
+
+
+
+                      google.load("visualization", "1", {packages:["corechart"]});
+                      google.setOnLoadCallback(drawChart);
+                      function drawChart() {
+                        var data = google.visualization.arrayToDataTable([
+                          ['Task', 'Hours per Day'],
+                          ['Work + Study',     12.5],
+                          ['Food & Family',     2.5],
+                          ['Sleep',    6.5],
+                          ['Music & Content Creation',  1],
+                          ['Yoga & Mindfulness', 1],
+                          ['Others',    .5]
+
+
+                        ]);
+
+                        var options = {
+                          title: 'My Daily Activities',
+                          colors: ['#0000ff', '#00cc00', '#333300', '#9933ff', '#ffff00', 'cc6600'],
+                          is3D: true,
+                        };
+
+                        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+                        chart.draw(data, options);
+                      }
+                    </script>
+
+
+                    <div id="piechart_3d" style="width: 800px; height: 500px;">
+                    <div id="chart_wrap" style = "position: relative;"">
+                    </div>
+                    </div>
                 </section>
 
 
