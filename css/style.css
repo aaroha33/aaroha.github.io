@@ -65,6 +65,51 @@ canvas {
 }
 
 
+$main_font: 'Roboto';
+$main_color: #ff6600;
+ul.heart {
+	li {
+		&::before,
+    &::after {
+      content: "\2764";
+      position: absolute;
+      left: 7px;
+      top: 5px;
+      width: 7px;
+      height: 12px;
+      background: $main_color;
+      -moz-border-radius: 50px 50px 0 0;
+      border-radius: 50px 50px 0 0;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-transform-origin: 0 100%;
+      -moz-transform-origin: 0 100%;
+      -ms-transform-origin: 0 100%;
+      -o-transform-origin: 0 100%;
+      transform-origin: 0 100%;
+		}
+    &::after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 0;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      -webkit-transform-origin: 100% 100%;
+      -moz-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+      -o-transform-origin: 100% 100%;
+      transform-origin :100% 100%;
+    }
+	}
+}
+
 
 
 
@@ -707,6 +752,13 @@ font-family: 'Flamenco', cursive;
 	  75%  {color: #CC66FF;}
       100% {color: #0000FF;}
 
+}
+
+.about-desc3 h1 {
+  font-size: 48px;
+  font-weight: 400;
+  font-family: 'Grenze Gotisch', cursive;
+/*font-family: "Montserrat", Georgia, serif;*/
 }
 
 .hire {
