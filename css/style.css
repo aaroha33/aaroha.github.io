@@ -65,53 +65,27 @@ canvas {
 }
 
 
-$main_font: 'Roboto';
-$main_color: #ff6600;
-ul.heart {
-	li {
-		&::before,
-    &::after {
-      content: "\2764";
-      position: absolute;
-      left: 7px;
-      top: 5px;
-      width: 7px;
-      height: 12px;
-      background: $main_color;
-      -moz-border-radius: 50px 50px 0 0;
-      border-radius: 50px 50px 0 0;
-      -webkit-transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-      -webkit-transform-origin: 0 100%;
-      -moz-transform-origin: 0 100%;
-      -ms-transform-origin: 0 100%;
-      -o-transform-origin: 0 100%;
-      transform-origin: 0 100%;
-		}
-    &::after {
-      content: "";
-      position: absolute;
-      top: 5px;
-      left: 0;
-      -webkit-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      transform: rotate(45deg);
-      -webkit-transform-origin: 100% 100%;
-      -moz-transform-origin: 100% 100%;
-      -ms-transform-origin: 100% 100%;
-      -o-transform-origin: 100% 100%;
-      transform-origin :100% 100%;
-    }
-	}
+
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
 }
 
-
-
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 
 
 
@@ -193,9 +167,9 @@ ul.heart {
 /* Button Styles */
 
 .button:hover {
+
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
 
 
 
