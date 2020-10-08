@@ -39,27 +39,27 @@ class NumberElement {
     this.config = numberElementConfig
     this.spawn()
   }
-  
+
   spawn() {
     this.value = this.config.values[Math.floor(random(0, 2))]
     this.size = random(this.config.size)
     this.speed = random(this.config.speed)
     this.x = random(this.config.x)
     this.y = random(this.config.y)
-    
+
     this.viewportOffset = this.config.size[1] + 20
-    
+
     if(Math.abs(this.speed) < 1) {
       this.speed += (this.speed < 0 ? -1 : 1)
     }
-    
+
     this.setSpawnPosition()
   }
-  
+
   respawn() {
     this.spawn()
   }
-  
+
   setSpawnPosition() {
     if(this.speed < 0) {
       let key = ['x', 'y'][Math.floor(random(0, 2))]
@@ -70,7 +70,7 @@ class NumberElement {
       this[key] = 0 - this.size
     }
   }
-  
+
   isInViewport() {
     if(
       this.x < 0 - this.viewportOffset ||
@@ -83,7 +83,7 @@ class NumberElement {
       return true
     }
   }
-  
+
   move() {
     this.x += this.speed
     this.y += this.speed
@@ -105,11 +105,11 @@ class NumberElementCollector {
     }
     generator()
   }
-  
+
   get() {
     return this.numberElements
   }
-  
+
   moveAll() {
     for (let i = 0; i < this.numberElements.length; ++i) {
       let element = this.numberElements[i]
@@ -126,7 +126,7 @@ class NumberElementCollector {
         ['0', '1'],
         [0, innerWidth], // x
         [0, innerHeight], // y
-        [15, 50], // size
+        [15, 40], // size
         [-12, 12] // speed
       )
     )
