@@ -3,7 +3,7 @@ Web Portfolio to showcase projects and skills in better manner.
 
 
 
-###### https://aaroha33.github.io/
+###### https://buddhadeb33.github.io/
 
 
 ### About me
